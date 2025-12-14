@@ -9,6 +9,8 @@ import StudentPage from "../pages/Teacher/StudentPage";
 import HomeworkPage from "../pages/Teacher/HomeworkPage";
 import StudentDashboardPage from "../pages/Student/StudentDashboard.tsx";
 import StudentSubjectPage from "../pages/Student/StudentSubjectPage.tsx";
+import NotificationsPage from "../pages/Student/NotificationPage.tsx";
+
 
 
 const router = createBrowserRouter([
@@ -21,6 +23,7 @@ const router = createBrowserRouter([
     {path: "/teacher/class/:classId/subject/:subjectId/student/:studentId", element: <StudentPage />},
     {path: "/teacher/class/:classId/subject/:subjectId/homework", element: <HomeworkPage />},
     {path: "/student",element: <StudentDashboardPage />},
+    {path: "/student/notifications", element: <NotificationsPage /> },
     {path: "/student/subject/:subjectId/class/:classId",element: <StudentSubjectPage />}
 ]);
 

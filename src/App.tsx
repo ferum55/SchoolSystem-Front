@@ -30,7 +30,6 @@ function App() {
         <Route path="/teacher" element={<TeacherDashboardPage />} />
         <Route path="/teacher/class/:classId" element={<ClassSubjectsPage />}
 />
-
       </Routes>
     </Router>
   );
